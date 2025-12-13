@@ -102,7 +102,7 @@ nlohmann/json
 
 ## Compile the backend:
 
-g++ main.cpp employee.cpp employee_manager.cpp -o server -pthread
+g++ -std=c++17 -I. -I./asio crow_file.cpp -o server.exe -lws2_32 -lmswsock
 
 
 ## Run the server:
