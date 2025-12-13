@@ -3,6 +3,10 @@
 node_modules/
 .next/
 s.env
+
+*.exe 
+build/
+bin/
 # dependencies
 /node_modules
 /.pnp
