@@ -33,7 +33,7 @@ int main()
 {
     crow::App<CORS> app;
 
-    // ADD EMPLOYEE
+    // ADD EMPLOYEE (POST)
     CROW_ROUTE(app, "/employee/add")
         .methods("POST"_method)([](const crow::request &req)
                                 {

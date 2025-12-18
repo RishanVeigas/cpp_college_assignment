@@ -6,10 +6,10 @@ export default function Dashboard() {
   const router = useRouter();
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100 px-4">
-      <div className="bg-white max-w-xl w-full rounded-xl shadow-lg p-8">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 px-4">
+      <div className="bg-white max-w-xl w-full rounded-2xl shadow-xl p-8 border border-gray-100">
         
-        <h1 className="text-3xl font-bold text-center mb-4 text-black">
+        <h1 className="text-4xl font-bold text-center mb-2 text-gray-800">
           Employee Management System
         </h1>
 
@@ -20,14 +20,14 @@ export default function Dashboard() {
         <div className="flex flex-col gap-4">
           <button
             onClick={() => router.push("/AddEmployee")}
-            className="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition"
+            className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-4 rounded-xl font-semibold hover:from-blue-700 hover:to-indigo-700 transition-all shadow-lg hover:shadow-xl transform hover:scale-105"
           >
             Add Employee
           </button>
 
           <button
             onClick={() => router.push("/EmployeeList")}
-            className="w-full bg-gray-800 text-white py-3 rounded-lg font-semibold hover:bg-gray-900 transition"
+            className="w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-4 rounded-xl font-semibold hover:from-indigo-700 hover:to-purple-700 transition-all shadow-lg hover:shadow-xl transform hover:scale-105"
           >
             View Employees
           </button>

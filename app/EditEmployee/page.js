@@ -95,64 +95,67 @@ export default function EditEmployee() {
 
   if (loading) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
-        <p className="text-lg font-semibold">Loading employee...</p>
+      <div className="min-h-screen flex justify-center items-center bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
+        <div className="text-center">
+          <div className="inline-block animate-spin rounded-full h-12 w-12 border-4 border-indigo-600 border-t-transparent mb-4"></div>
+          <p className="text-lg font-semibold text-gray-700">Loading employee...</p>
+        </div>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-gray-100 px-4 py-8 text-black">
-      <div className="max-w-lg mx-auto bg-white rounded-xl shadow-lg p-6">
-        <h2 className="text-2xl font-bold mb-6 text-center">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 px-4 py-8">
+      <div className="max-w-lg mx-auto bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
+        <h2 className="text-4xl font-bold mb-8 text-center text-gray-800">
           Edit Employee
         </h2>
 
         {/* ID (Read-only) */}
-        <div className="mb-4">
-          <label className="block font-semibold">Employee ID</label>
+        <div className="mb-5">
+          <label className="block text-sm font-semibold mb-2 text-gray-700">Employee ID</label>
           <input
             value={form.id}
             disabled
-            className="border p-2 w-full rounded bg-gray-100"
+            className="w-full border border-gray-300 rounded-xl px-4 py-3 bg-gray-100 text-gray-600"
           />
         </div>
 
         {/* Name */}
-        <div className="mb-4">
-          <label className="block font-semibold">Name</label>
+        <div className="mb-5">
+          <label className="block text-sm font-semibold mb-2 text-gray-700">Name</label>
           <input
             name="name"
             value={form.name}
             onChange={handleChange}
-            className="border p-2 w-full rounded"
+            className="w-full border border-gray-300 rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all text-gray-700"
           />
-          {errors.name && <p className="text-red-600 text-sm">{errors.name}</p>}
+          {errors.name && <p className="text-red-600 text-sm mt-1">{errors.name}</p>}
         </div>
 
         {/* Role */}
-        <div className="mb-4">
-          <label className="block font-semibold">Role</label>
+        <div className="mb-5">
+          <label className="block text-sm font-semibold mb-2 text-gray-700">Role</label>
           <input
             name="role"
             value={form.role}
             onChange={handleChange}
-            className="border p-2 w-full rounded"
+            className="w-full border border-gray-300 rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all text-gray-700"
           />
-          {errors.role && <p className="text-red-600 text-sm">{errors.role}</p>}
+          {errors.role && <p className="text-red-600 text-sm mt-1">{errors.role}</p>}
         </div>
 
         {/* Salary */}
-        <div className="mb-4">
-          <label className="block font-semibold">Salary</label>
+        <div className="mb-6">
+          <label className="block text-sm font-semibold mb-2 text-gray-700">Salary</label>
           <input
             name="salary"
             value={form.salary}
             onChange={handleChange}
-            className="border p-2 w-full rounded"
+            className="w-full border border-gray-300 rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all text-gray-700"
           />
           {errors.salary && (
-            <p className="text-red-600 text-sm">{errors.salary}</p>
+            <p className="text-red-600 text-sm mt-1">{errors.salary}</p>
           )}
         </div>
 
@@ -160,14 +163,14 @@ export default function EditEmployee() {
         <div className="flex gap-4">
           <button
             onClick={handleSubmit}
-            className="flex-1 bg-blue-600 text-white py-2 rounded hover:bg-blue-700"
+            className="flex-1 bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-4 rounded-xl font-semibold hover:from-blue-700 hover:to-indigo-700 transition-all shadow-lg hover:shadow-xl transform hover:scale-105"
           >
             Update
           </button>
 
           <button
             onClick={() => router.push("/EmployeeList")}
-            className="flex-1 bg-gray-500 text-white py-2 rounded hover:bg-gray-600"
+            className="flex-1 bg-gradient-to-r from-gray-700 to-gray-800 text-white py-4 rounded-xl font-semibold hover:from-gray-800 hover:to-gray-900 transition-all shadow-lg hover:shadow-xl transform hover:scale-105"
           >
             Cancel
           </button>

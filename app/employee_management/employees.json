@@ -1,8 +1,74 @@
 [
     {
         "id": "1001",
-        "name": "Rishan",
-        "role": "gunda bhai",
-        "salary": 30000000.0
+        "name": "Thanush",
+        "role": "Web Developer",
+        "salary": 48000.0
+    },
+    {
+        "id": "1002",
+        "name": "Rishan Veigas",
+        "role": "Software developer",
+        "salary": 100000.0
+    },
+    {
+        "id": "1003",
+        "name": "himanshu shinde",
+        "role": "video editor",
+        "salary": 300000.0
+    },
+    {
+        "id": "1004",
+        "name": "Vikas K Malipatil",
+        "role": "Ai engineer",
+        "salary": 1000000.0
+    },
+    {
+        "id": "1005",
+        "name": "Yenker",
+        "role": "Data Analyst",
+        "salary": 89090.0
+    },
+    {
+        "id": "1007",
+        "name": "Sweekar",
+        "role": "OS manager",
+        "salary": 90000.0
+    },
+    {
+        "id": "1030",
+        "name": "Nikhil Das",
+        "role": "Software Developer",
+        "salary": 200000.0
+    },
+    {
+        "id": "1070",
+        "name": "Ananya",
+        "role": "Data Analyst",
+        "salary": 89090.0
+    },
+    {
+        "id": "1069",
+        "name": "Prawjal",
+        "role": "OS manager",
+        "salary": 90000.0
+    },
+    {
+        "id": "1031",
+        "name": "Preeetham Das",
+        "role": "Software Developer",
+        "salary": 200000.0
+    },
+    {
+        "id": "3421",
+        "name": "Rahul",
+        "role": "Researcher",
+        "salary": 60000.0
+    },
+    {
+        "id": "1990",
+        "name": "Mohit Shetty",
+        "role": "Cameraman",
+        "salary": 900000.0
     }
 ]
