@@ -24,12 +24,6 @@
         "salary": 1000000.0
     },
     {
-        "id": "1005",
-        "name": "Yenker",
-        "role": "Data Analyst",
-        "salary": 89090.0
-    },
-    {
         "id": "1007",
         "name": "Sweekar",
         "role": "OS manager",
@@ -70,5 +64,11 @@
         "name": "Mohit Shetty",
         "role": "Cameraman",
         "salary": 900000.0
+    },
+    {
+        "id": "FA1200",
+        "name": "Shiji Abraham",
+        "role": "Assistant Professor",
+        "salary": 900067.0
     }
 ]
